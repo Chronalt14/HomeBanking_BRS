@@ -28,7 +28,7 @@ void prelievo(double &saldo_utente);
 void deposito(double &saldo_utente, double depositi[]);
 void bonifico(double &saldo_utente, string iban_destinatario);
 
-void login()                                           //Queste righe (da 31 a 49) è in complesso una procedura per il login; si potrebbe pensare un implementazione con database
+void login()                                           //Queste righe (da 31 a 49) sono in complesso una procedura per il login; si potrebbe pensare un implementazione con database
 {
     string email="", password="";                    
 
@@ -48,7 +48,7 @@ void login()                                           //Queste righe (da 31 a 4
     cout<<"Login avvenuto con successo, sta entrando automaticamente in un menu' successivo per le operazioni"<<fine<<endl;
 }
 
-void registrarsi()                                                                          //Queste righe (da 51 a 97) è in complesso una procedura per registrarsi
+void registrarsi()                                                                          //Queste righe (da 51 a 97) sono in complesso una procedura per registrarsi
 {
     string nome="", cognome="", comune_di_nascita="", domicilio="", email="", password="";
     int giorno_di_nascita=0, mese_di_nascita=0, anno_di_nascita=0;
@@ -96,7 +96,7 @@ void registrarsi()                                                              
     cout<<"Registrazione avvenuta con successo, sta entrando automaticamente in un menu' successivo per le operazioni"<<fine<<endl;
 }
 
-void menu_1()                                              //Queste righe (da 99 a 137) è in complesso una procedura per il menù principale
+void menu_1()                                              //Queste righe (da 99 a 137) sono in complesso una procedura per il menù principale
 {
     cout<<giallo<<"\033[1m";
     cout<<"Benvenuto nell'home banking BRS"<<endl;
@@ -136,7 +136,7 @@ void menu_1()                                              //Queste righe (da 99
     while(scelta_1!=1&&scelta_1!=2&&scelta_1!=3);
 }
 
-void menu_2(string &iban, double saldo_utente, double depositi[])        //Queste righe (da 139 a 199) è in complesso una procedura per il menù successivo al principale
+void menu_2(string &iban, double saldo_utente, double depositi[])        //Queste righe (da 139 a 199) sono in complesso una procedura per il menù successivo al principale
 {
     int scelta_2=0;
 
@@ -198,7 +198,7 @@ void menu_2(string &iban, double saldo_utente, double depositi[])        //Quest
     while(scelta_2!=6);
 }
 
-string genera_iban()                  //Queste righe (da 201 a 213) è in complesso una funzione che serve per generare l'IBAN
+string genera_iban()                  //Queste righe (da 201 a 213) sono in complesso una funzione che serve per generare l'IBAN
 {
     string iban="IT";
 
@@ -212,7 +212,7 @@ string genera_iban()                  //Queste righe (da 201 a 213) è in comple
     return iban;
 }
 
-double saldo_utente()                                  //Queste righe (da 215 a 222) è in complesso una funzione che serve per generare randomicamente il saldo dell'utente
+double saldo_utente()                                  //Queste righe (da 215 a 222) sono in complesso una funzione che serve per generare randomicamente il saldo dell'utente
 {
     srand(static_cast<unsigned int>(time(nullptr)));
 
@@ -221,7 +221,7 @@ double saldo_utente()                                  //Queste righe (da 215 a 
     return saldo_casuale;
 }
 
-void prelievo(double &saldo_utente)                                               //Queste righe (da 224 a 262) è in complesso una procedura che serve per far funzionare la modalità prelievo
+void prelievo(double &saldo_utente)                                               //Queste righe (da 224 a 262) sono in complesso una procedura che serve per far funzionare la modalità prelievo
 {
     double importo_prelievo=0;
 
@@ -261,7 +261,7 @@ void prelievo(double &saldo_utente)                                             
     }
 }
 
-void deposito(double &saldo_utente, double depositi[])                                              //Queste righe (da 264 a 289) è in complesso una procedura che serve per depositare i soldi nel proprio conto
+void deposito(double &saldo_utente, double depositi[])                                              //Queste righe (da 264 a 289) sono in complesso una procedura che serve per depositare i soldi nel proprio conto
 {
     double importo_deposito=0;
 
@@ -288,7 +288,7 @@ void deposito(double &saldo_utente, double depositi[])                          
     cout<<"Saldo disponibile: euro "<<saldo_utente<<fine<<endl;
 }
 
-void bonifico(double &saldo_utente, string iban_destinatario)                                                           //Queste righe (da 291 a 312) è in complesso una procedura che serve a fare bonifici ad altri IBAN
+void bonifico(double &saldo_utente, string iban_destinatario)                                                           //Queste righe (da 291 a 312) sono in complesso una procedura che serve a fare bonifici ad altri IBAN
 {
     double importo_bonifico=0;
 
@@ -311,7 +311,7 @@ void bonifico(double &saldo_utente, string iban_destinatario)                   
     cout<<"Bonifico di euro "<<importo_bonifico<<" verso l'IBAN "<<iban_destinatario<<" avvenuto con successo, ha disponibile: euro "<<saldo_utente<<rosa_chiaro<<endl;
 }
 
-int main()                                             //Queste righe (da 314 a 325) è l'int main che richiama tutte le funzioni e procedure al fine di stamparle nel prompt
+int main()                                             //Queste righe (da 314 a 325) sono l'int main che richiama tutte le funzioni e procedure al fine di stamparle nel prompt
 {
     menu_1();
 
