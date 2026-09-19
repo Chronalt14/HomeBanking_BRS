@@ -1,4 +1,4 @@
-//Questo script e' stato realizzato da Francesco Bivona e da altri 2 alunni della III Ainf. 2023/2024. Il codice simula il funzionamento di una home banking con funzioni basiche.
+//Questo script e' stato realizzato da Francesco Bivona. Il codice simula il funzionamento di una home banking con funzioni basiche.
 
 #include <iostream> //Queste righe (da 3 a 6) sono le librerie che servono per il funzionamento del codice, come ad esempio i/o, stringhe ecc. 
 #include <string>
